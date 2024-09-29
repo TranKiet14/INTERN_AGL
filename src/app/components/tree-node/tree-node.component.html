@@ -1,0 +1,23 @@
+<li [ngClass]="{'last-node': last}">
+    <div class="d-flex align-items-center gap-5 justify-content-between item-child">
+        <div class="d-flex align-items-center gap-2">
+            <div class="img">
+                <img [src]="node.thumbnail" class="img-fluid" alt="...">
+            </div>
+            <div class="title" (click)="onClick()">{{ node?.title }}</div>
+        </div>
+        <div class="toggle d-flex align-items-center justify-content-center me-2" *ngIf="node?.children && !node?.isExpanded"
+            (click)="toggleNode(node)">
+            <img src="/assets/images/add-dark.png" alt="">
+        </div>
+        <div class="toggle d-flex align-items-center justify-content-center me-2" *ngIf="node?.children && node?.isExpanded"
+            (click)="toggleNode(node)">
+            <img src="/assets/images/minus-dark.png" alt="">
+        </div>
+    </div>
+    <ul *ngIf="node?.isExpanded && node?.children">
+        <ng-container *ngFor="let child of node?.children; let isLast = last">
+            <app-tree-node [node]="child" [last]="isLast" ></app-tree-node>
+        </ng-container>
+    </ul>
+</li>

@@ -1,0 +1,9 @@
+<div class="section-fourteen">
+    <div class="container">
+        <div class="row gx-5 justify-content-center">
+            <div *ngFor="let item of logos; let i = index" class="col-lg-3 col-md-3 col-sm-6 col-12 d-md-flex align-items-center justify-content-center" [ngClass]="{'d-none': i > 0}">
+                <img [src]="item.image" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>

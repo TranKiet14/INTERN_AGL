@@ -1,0 +1,51 @@
+/* Section-three */
+.section-three {
+    padding-bottom: 30px;
+}
+
+.product__title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    // white-space: nowrap;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+}
+
+.product__star {
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.product__star span {
+    color: var(--color-one);
+}
+
+.product__rent {
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.product__rent span {
+    color: var(--color-one);
+}
+
+.product__txt {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.product__description {
+    border-bottom: 1px solid var(--color-border);
+    margin-bottom: 10px;
+}
+
+
+
+/* End section-three */

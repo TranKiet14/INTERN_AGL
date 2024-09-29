@@ -1,0 +1,240 @@
+/* Section-one */
+.section-one__banner {
+    background-color: var(--color-two);
+    height: 400px;
+    background-image: url(/assets/images/banner.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 55% 100%;
+}
+
+
+.section-one__contents {
+    width: 45%;
+    padding-top: 7%;
+    padding-left: 5%;
+}
+
+.title {
+    color: var(--color-title);
+    font-size: 44px;
+    line-height: 48px;
+    font-weight: 600;
+}
+
+.content {
+    color: var(--color-title);
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.section-one__tab-options {
+    background-color: var(--color-two);
+    border-radius: 0px 0px 20px 20px;
+}
+
+.section-one__indicators {
+    width: 62px;
+}
+
+.eclipse {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.eclipse--active {
+    background-color: var(--color-one);
+}
+
+.tab {
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    padding: 9px 20px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 27px;
+}
+
+.tab__left {
+    border-top-left-radius: 10px;
+}
+
+.tab__right {
+    border-top-right-radius: 10px;
+}
+
+.tab--active {
+    background-color: var(--color-one);
+    border: none;
+}
+
+.title-sm {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18.15px;
+    color: #2C2A29;
+    margin-bottom: 6px;
+}
+
+.content-sm {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    color: #706C69;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0;
+}
+
+
+.box::before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 18.5px;
+    background-color: #95908D;
+    margin-right: 2rem;
+}
+
+.dropdown-menu {
+    position: absolute;
+    width: auto;
+    white-space: nowrap;
+    padding: 15px;
+    padding-bottom: 5px;
+}
+
+@media(max-width: 992px) {
+    .section-one__banner {
+        height: 126px;
+    }
+
+    .title {
+        font-size: 1rem;
+        line-height: 1rem;
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+    }
+
+    .content {
+        font-size: 0.75rem;
+        font-weight: 400;
+        line-height: 0.75rem;
+    }
+
+    .tab {
+        width: 50%;
+        text-align: center;
+        background-color: #fff;
+        padding: 9px 20px;
+        border-bottom: 1px solid #ddd;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 27px;
+    }
+
+    .tab--active {
+        background-color: var(--color-one);
+        border: none;
+    }
+
+    .bg-req {
+        background-color: #fff;
+    }
+
+    .req {
+        background-color: var(--color-three);
+    }
+
+    .section-one__indicators {
+        margin-bottom: 15px
+    }
+    .box {
+        position: relative;
+        margin-top: 15px;
+    }
+
+    .box::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -5px;
+        width: 100%;
+        height: 1px;
+        background-color: #95908D;
+
+    }
+}
+
+
+@media(max-width: 576px) {
+    .section-one__banner {
+        height: 126px;
+    }
+
+    .title {
+        font-size: 1rem;
+        line-height: 1rem;
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+    }
+
+    .content {
+        font-size: 0.75rem;
+        font-weight: 400;
+        line-height: 0.75rem;
+    }
+
+    .tab {
+        width: 50%;
+        text-align: center;
+        background-color: #fff;
+        padding: 9px 20px;
+        border-bottom: 1px solid #ddd;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 27px;
+    }
+
+    .tab--active {
+        background-color: var(--color-one);
+        border: none;
+    }
+
+    .bg-req {
+        background-color: #fff;
+    }
+
+    .req {
+        background-color: var(--color-three);
+    }
+
+    .section-one__indicators {
+        margin-bottom: 15px
+    }
+
+    .box {
+        position: relative;
+        margin-top: 15px;
+    }
+
+    .box::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -5px;
+        width: 100%;
+        height: 1px;
+        background-color: #95908D;
+
+    }
+}
+
+/* End section-one */

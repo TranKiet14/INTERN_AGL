@@ -1,1 +1,237 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --color-title: #2C2A29;
+    --color-default: #EDEDED;
+    --color-one: #FFA21A;
+    --color-two: #FFD400;
+    --color-three: #FFC900;
+    --color-border: #E1DEDD;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.text-title {
+    color: var(--color-title);
+}
+
+.btn {
+    border-radius: 10px;
+}
+
+
+.btn-primary {
+    background-color: var(--color-one);
+    border: none;
+    color: var(--color-title);
+}
+
+.btn-primary:active {
+    color: var(--color-title) !important;
+    background-color: var(--color-two) !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-one);
+    color: var(--color-title);
+}
+
+.btn-light {
+    border-color: var(--color-one);
+    color: var(--color-one);
+    background-color: #fff;
+}
+
+.btn-light:hover {
+    border-color: var(--color-one);
+    color: var(--color-one);
+    background-color: #fff;
+}
+
+.btn-light:active {
+    border-color: var(--color-one) !important;
+    color: var(--color-one) !important;
+    background-color: #fff !important;
+}
+
+.btn__step {
+    width: 48px;
+    height: 48px;
+    background: #FFA21A26;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.btn__step:active {
+    background: #FFA21A4D;
+}
+
+.form-check-input:focus {
+    border-color: var(--color-one);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #FFA21A26;
+}
+
+.form-check-input:checked {
+    background-color: var(--color-one);
+    border-color: var(--color-one);
+}
+
+.tag {
+    font-size: 14px;
+    line-height: 16.94px;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 14px 20px;
+    color: var(--color-title);
+    background-color: var(--color-default);
+    cursor: pointer;
+}
+
+.tag--active {
+    background-color: var(--color-one);
+}
+
+.title__category {
+    display: flex;
+    color: var(--color-title);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33.89px;
+    padding: 20px 0;
+    align-items: center;
+}
+
+.title__category::before {
+    content: "";
+    display: block;
+    height: 34px;
+    width: 8px;
+    border-radius: 10px;
+    background-color: var(--color-one);
+    margin-right: 10px;
+}
+
+.title__other {
+    color: var(--color-title);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33.89px;
+    padding: 15px 0;
+}
+
+.title__other::after {
+    content: "";
+    display: block;
+    height: 10px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: var(--color-one);
+    margin-top: 10px;
+}
+
+.shield-tick {
+    width: 36px;
+    height: 36px;
+    background: var(--color-one);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+.shield-tick--dark {
+    border-radius: 8px;
+    padding: 4px;
+    width: 24px;
+    height: 24px;
+    background: #3D3D3DCC;
+}
+
+@media(max-width: 576px) {
+    .tag {
+        font-size: 12px;
+        line-height: 14.52px;
+        font-weight: 600;
+        border-radius: 10px;
+        padding: 8px 10px;
+        color: var(--color-title);
+        background-color: var(--color-default);
+    }
+
+    .title__category {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.78px;
+    }
+
+    .title__other {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24.2px;
+        text-align: left;
+    }
+}
+
+
+.tree ul {
+    padding-left: 13px;
+    list-style-type: none;
+}
+
+.tree ul li {
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+
+.tree ul li:before {
+    position: absolute;
+    top: 12.5px;
+    left: 0;
+    width: 10px;
+    height: 5px;
+    margin: auto;
+    content: '';
+    border-bottom: 1px solid var(--color-border);
+    border-left: 1px solid var(--color-border);
+    border-bottom-left-radius: 5px;
+}
+
+
+.tree ul li::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    content: '';
+    background-color: var(--color-border);
+}
+
+
+.tree ul .last-node:after{
+    height:15px;
+}
+
+.tree ul a {
+    cursor: pointer;
+}
+
+.tree ul a:hover {
+    text-decoration: none;
+}

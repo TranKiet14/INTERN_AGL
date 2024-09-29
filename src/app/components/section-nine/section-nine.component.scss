@@ -1,0 +1,32 @@
+/* Section nine */
+.section-nine {
+    padding-bottom: 30px;
+}
+
+.section-nine__card {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid var(--color-border);
+    border-radius: 30px;
+}
+
+.card__number {
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--color-one);
+}
+
+.card__title {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.card__text {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+/* End section nine */

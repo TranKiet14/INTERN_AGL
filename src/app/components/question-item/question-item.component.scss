@@ -1,0 +1,27 @@
+.question {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26.63px
+}
+
+.answer {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.78px;
+}
+
+@media(max-width: 576px) {
+    .question {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21.78px;
+    }
+
+    .answer {
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.94px;
+    }
+}

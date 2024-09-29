@@ -1,0 +1,111 @@
+<div class="section-one">
+    <div class="container">
+        <div class="shadow rounded-4">
+            <div class="section-one__banner rounded-top-4">
+                <div class="section-one__contents">
+                    <p class="title">Nền tảng cho thuê B2B lớn nhất
+                        việt nam</p>
+                    <p class="content">Tìm kiếm, so sánh và thuê hàng
+                        nghìn thiết bị thuộc hàng trăm danh mục chỉ trong vài cú nhấp chuột</p>
+                </div>
+            </div>
+            <div class="section-one__tab-options">
+                <div class="row">
+                    <div class="col-lg-3 order-2">
+                        <div class="d-flex align-item-starts">
+                            <div class="tab tab__left tab--active">Bán</div>
+                            <div class="tab tab__right">Cho thuê</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12 order-4 order-lg-2">
+                        <div class="bg-req d-lg-flex d-none align-items-center h-100 py-lg-0 py-3">
+                            <span class="me-3 fs-6">Hoặc</span>
+                            <button class="rounded-pill px-3 border-0 fs-6 fw-medium req">Gửi yêu cầu của
+                                bạn</button>
+                        </div>
+                    </div>
+                    <div
+                        class="offset-lg-3 col-lg-3 col-12 d-flex justify-content-lg-end justify-content-center order-1 order-lg-3">
+                        <div class="section-one__indicators d-flex justify-content-between me-lg-4">
+                            <div class="eclipse eclipse--active"></div>
+                            <div class="eclipse"></div>
+                            <div class="eclipse"></div>
+                            <div class="eclipse"></div>
+                        </div>
+                    </div>
+                    <div class="col-12 order-3 order-lg-4">
+                        <div class="bg-white p-4 rounded-bottom-4">
+                            <div class="row">
+                                <div class="col-lg-10 col-12">
+                                    <div class="row">
+                                        <div class="col-md-4 col-12">
+                                            <div class="d-flex align-items-center">
+                                                <img class="me-2" src="assets/images/search-normal.png" width="24px"
+                                                    height="24px">
+                                                <div class="w-100">
+                                                    <p class="title-sm">Danh mục</p>
+                                                    <div class="dropdown">
+                                                        <button class="content-sm position-relative"
+                                                            data-bs-auto-close="outside" data-bs-toggle="dropdown">{{ getSelectedCategory() }}</button>
+                                                        <div class="dropdown-menu">
+                                                            <app-tree-view></app-tree-view>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-12">
+                                            <div class="d-flex align-items-center box">
+                                                <img class="me-2" src="assets/images/verify.png" width="24px"
+                                                    height="24px">
+                                                <div>
+                                                    <p class="title-sm">Tình trạng</p>
+                                                    <div class="content-sm">Tất cả tình trạng</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-12">
+                                            <div class="d-flex align-items-center box">
+                                                <img class="me-2" src="assets/images/location.png" width="24px"
+                                                    height="24px">
+                                                <div class="w-100">
+                                                    <p class="title-sm">Khu vực</p>
+                                                    <div class="dropdown">
+                                                        <button class="content-sm position-relative"
+                                                            data-bs-auto-close="outside" data-bs-toggle="dropdown">{{
+                                                            getSelectedCity() }}</button>
+                                                        <div class="dropdown-menu">
+                                                            <div *ngFor="let item of cities" class="form-check mb-1">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    [value]="item.id"
+                                                                    (change)="onCheckboxChange($event)">
+                                                                <label class="form-check-label ms-1 fw-medium" for="">
+                                                                    {{item.title}}
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-12">
+                                    <div
+                                        class="d-flex h-100 align-items-center justify-content-md-end justify-content-center ps-xl-5">
+                                        <button class="btn btn-primary fw-medium w-100">Tìm kiếm</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-req d-sm-none d-flex align-items-center my-3">
+            <span class="me-3 fs-6">Hoặc</span>
+            <button class="rounded-pill px-3 border-0 fs-6 fw-medium req">Gửi yêu cầu của
+                bạn</button>
+        </div>
+    </div>
+</div>

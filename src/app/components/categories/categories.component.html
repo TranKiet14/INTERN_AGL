@@ -1,0 +1,39 @@
+<div class="section-two">
+    <div class="container">
+        <div class="title__category">
+            <p class="m-0">Danh mục thiết bị mới và đã qua sử dụng</p>
+        </div>
+        <div class="d-flex flex-wrap gap-3 pb-4">
+            <div *ngFor="let item of categories" class="tag"
+                [ngClass]="{'tag--active': selected === item.id}" (click)="selectTag(item.id)">
+                {{ item.title }}
+            </div>
+        </div>
+        <div class="d-flex flex-wrap pb-4 position-relative">
+            <div class="category">
+                <div class="category__name">{{ selectedCategory?.title  }}</div>
+                <img [src]="selectedCategory?.thumbnail" class="img-fluid d-lg-block d-none">
+                <button class="btn__view-all">Xem tất cả</button>
+            </div>
+            <swiper-container class="swiper mySwiper-category" slides-per-view="4" loop="true">
+                <swiper-slide *ngFor="let item of selectedCategory?.children" class="swiper-slide">
+                    <div class="category__item">
+                        <div class="category__content">
+                            <div class="category-item__name">{{ item.title }}</div>
+                            <img [src]="item.thumbnail" class="img-fluid">
+                        </div>
+                    </div>
+                </swiper-slide>
+            </swiper-container>
+            <div class="w-75 position-absolute d-lg-flex d-none justify-content-between"
+                style="bottom: 2.5rem; right: 2rem" [ngClass]="{'d-md-none': selectedCategory?.children?.length < 5}">
+                <div class="category-prev btn__step" >
+                    <img src="assets/images/arrow-left.png" alt="">
+                </div>
+                <div class="category-next btn__step" >
+                    <img src="assets/images/arrow-right.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="section-thirteen">
+    <div class="container">
+        <div class="">
+            <div class="d-flex justify-content-between">
+                <div class="title__other pt-0">
+                    <p class="m-0">Các câu hỏi thường gặp</p>
+                </div>
+                <div class="d-flex align-items-start">
+                    <button class="btn btn-primary fw-medium px-3 py-2">Xem thêm FAQs</button>
+                </div>
+
+            </div>
+            <p class="fw-medium m-0">Nếu bạn có thêm câu hỏi, hãy truy cập FAQs của chúng tôi</p>
+        </div>
+        <div class="row g-3">
+            <div class="col-md-6 col-12"  *ngFor="let items of questions">
+                <app-question-item [data]="items"></app-question-item>
+            </div>
+        </div>
+    </div>
+</div>

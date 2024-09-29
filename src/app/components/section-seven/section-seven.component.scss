@@ -1,0 +1,43 @@
+/* Section seven */
+
+.section-seven__content {
+    min-height: 570px;
+}
+
+.box__icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-one);
+    border-radius: 10px;
+}
+
+.section-seven__card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 20px;
+    border: 2px solid var(--color-border);
+    padding: 40px 20px;
+}
+
+.box__title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    margin-bottom: 15px;
+}
+
+.box__text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+}
+
+@media(max-width: 576px) {
+    
+}
+
+/* End section seven */
